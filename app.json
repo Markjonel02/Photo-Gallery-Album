@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Aura Gallery",
+    "slug": "aura-gallery",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#090d16",
+    "splash": { "backgroundColor": "#090d16" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.auragallery.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Aura Gallery needs access to your photos to import and organize albums."
+      }
+    },
+    "android": {
+      "package": "com.auragallery.app",
+      "adaptiveIcon": { "backgroundColor": "#090d16" }
+    },
+    "plugins": [
+      ["expo-image-picker", { "photosPermission": "The app accesses your photos to let you organize albums." }]
+    ]
+  }
+}
