@@ -6,20 +6,38 @@
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "backgroundColor": "#090d16",
-    "splash": { "backgroundColor": "#090d16" },
+    "splash": {
+      "backgroundColor": "#090d16"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.auragallery.app",
       "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "Aura Gallery needs access to your photos to import and organize albums."
+        "NSPhotoLibraryUsageDescription": "Aura Gallery needs access to your photos to import and organize albums.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
       "package": "com.auragallery.app",
-      "adaptiveIcon": { "backgroundColor": "#090d16" }
+      "adaptiveIcon": {
+        "backgroundColor": "#090d16"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
-      ["expo-image-picker", { "photosPermission": "The app accesses your photos to let you organize albums." }]
-    ]
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you organize albums."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3a0f4162-e15e-4e68-baee-fdd711ba3d76"
+      }
+    }
   }
 }
